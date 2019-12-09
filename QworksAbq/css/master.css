@@ -1,0 +1,826 @@
+/*fontstyling porterbold*/
+@font-face {
+    font-family: 'porterbold';
+    src: url('../fonts/porter_bold.woff2') format('woff2'),
+      url('../fonts/porter_bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  /*tags*/
+  body {
+    background: #f2f4f3;
+    justify-content: center;
+    text-align: center;
+  }
+  iframe {
+    padding-top: 20px;
+  }
+  .container-fluid{
+    width: auto;
+    margin-top:15vh;
+  }
+  .col-sm-12, .col-sm-4, .col-sm-2, .col-sm-1{
+    padding:0;
+  }
+  button:focus{
+    outline: none;
+  }
+  i {
+    color: #F0592b;
+    /*  text-shadow: #3d3d3c 2px 2px; */
+  }
+  /*allh1headings*/
+  h1 {
+    color: #F0592b;
+    text-shadow: #3d3d3c 2px 2px;
+    font-size: 8vh ;
+  }
+  /*allh2headings*/
+  h2 {
+    color: #F0592b;
+    text-shadow: #3d3d3c 2px 2px;
+  }
+  /*allh3headings*/
+  h3 {
+    color: #F0592b;
+    text-shadow: #3d3d3c 2px 2px;
+  }
+  row {
+    height: auto;
+  }
+  /* queries*/
+
+  @media only screen and (max-width: 576px) {
+    body{
+      width:100vw;
+      margin: 0;
+    }
+  .row{
+    width:100vw;
+  } 
+  .rr{
+    width:40vw;
+}
+    .abqcenter {
+      margin: 0 auto;
+      padding:0;
+      height:33vh;
+    }
+
+    .albuquerquetext{
+      margin:0 auto;
+      padding:6px auto;
+      font-size: 4vh;
+    }
+  }
+
+  @media only screen and (min-width: 576px) {
+    .abqcenter {
+      margin: 0;
+      height:100vh;
+    }
+
+    .albuquerquetext{
+      margin: 25vh auto; 
+      font-size:6vh;
+      height:10vh
+    }
+ .rr{
+  margin-right:10vw;
+ }
+  }
+
+  /*navbar*/
+  .navrow{
+  padding:0;
+  }
+  .navbar, .navbar-expand-xs {
+    height:15vh;
+    margin:0;
+    border:0;
+    background-color: #f2f4f3;
+    padding:0;
+    width:100vw;
+  }
+
+  .navbar-brand{
+    margin:auto 0;
+    padding:0;
+  }
+  .nav-item{
+    font-size: 5vh;
+    background-color: #f2f4f3;
+    padding-bottom:5vh
+  }
+  .nav-link{
+  font-family: porterbold;
+  color:#F0592b;
+  margin: 0 auto;
+  }
+  .navbar-toggler{
+    width:auto;
+    height:auto;
+    padding:0;
+  }
+  .rr{
+    height:10vh;
+    width:auto;
+    background-image: url("../assets/RunYourCity3.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    animation: 1s ease-out 1s 1 rrstart;
+}
+
+@keyframes rrstart {
+0% {
+  transform: translateX(-90vw);
+}
+
+100% {
+  transform: translateX(0);
+  }
+}
+
+  /*homepage*/
+  .head{
+    padding:2vh auto;
+    text-align: center;
+    font-family: porterbold;
+  }
+  .vidContain {
+    background-image: url('../assets/video1.gif');
+    height: 100vh;
+    width: 100vw;
+    padding:0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .albuquerqueimagecontain{
+    background-image: url('../assets/albuquerquestatic3.png');
+    height: 100vh;
+    width: 100%;
+    opacity: 90%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+  }
+  
+  /*Homepage: typing text just the text*/
+  .typingtext {
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    font-size: 6vh;
+    color: white;
+    font-family: porterbold;
+    text-shadow: #3d3d3c 2px 2px;
+  }
+  /*Homepage: typing animation*/
+  .typingtext:after {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 100%;
+    line-height: 8vh;
+    left:5%;
+    top: 50%;
+    animation: typingtext 12s linear 1;
+    /*the speed of the image is adjusted*/
+    animation-fill-mode: forwards;
+    /*keeps animation present after the text has finished typing*/
+    margin-top: 35vh;
+  }
+  .missioncol {
+    margin: 0 auto;
+    background-color: #f2f4f3;
+    height: auto;
+  }
+  .missiontext * {
+    font-family: porterbold;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 6vh;
+    margin-top: 4vh;
+    height: auto;
+  }
+  .missionrow{
+    border-bottom: 3vh;
+    border-style: dotted;
+    border-color: #f2f4f3;
+  }
+  .CARROW{
+    align-items: center;
+  }
+  .carousel-control-next-icon, .carousel-control-prev-icon{
+  height: 50px;
+  width: 30px;
+  background-color: #F0592b;
+  background-size: 50%, 50%;
+  }
+  .carousel-item{
+    justify-items :center;
+    width:60vw;
+    height:70vh;
+    margin-left: 20vw;
+  }
+  
+  /*topics*/
+  .sky{
+    background-color: #152837;
+    margin: 0 auto;
+  }
+  .abqcenter {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .albuquerquetext{
+    font-size:6vh;
+    font-family: porterbold;
+  }
+  .cct{
+    color:#f1f4f3;
+  }
+  .FB2 {
+    margin-top: 3px;
+    border-top: 4px dotted;
+    border-top-color: #F0592b;
+    border-bottom: 4px dotted;
+    border-bottom-color: #F0592b;
+    margin-bottom: 3px;
+  }
+  .footericons{
+    height:10vh;
+  border-radius: 75px;
+  }
+  .Qworkslogofooter {
+    height: 100px;
+    width:auto;
+    margin:0 auto;
+  }
+  .qworkslogoheader{
+    height:10vh;
+    width:auto;
+  }
+  .footertext{
+    color: #3d3d3c;
+    font-family: porterbold;
+    margin:10;
+  }
+  /*orangeandblack HR, will always be in own row&col*/
+  .mt{
+    border-top: 4px dotted;
+    border-color: black;
+    margin-right: 66%;
+  }
+  .mt2{
+    border-top: 4px dotted;
+    border-color: #F0592b;
+    margin-right: 66%;
+  }
+  .mb{
+    border-top: 4px dotted;
+    border-color: black;
+    margin-left: 66%;
+  }
+  .mb2{
+    border-top: 4px dotted;
+    border-color:#F0592b;
+    margin-left: 66%;
+  }
+  .CB {
+    margin-top: 8px;
+    border-top: 4px dotted;
+    border-top-color: black;
+    border-bottom: 4px dotted;
+    border-bottom-color: black;
+    margin-bottom: 8px;
+  }
+  .CR{
+    border-top: 4px dotted;
+    border-color: black;
+    margin:10px 30%;
+  }
+  .CR2{
+    border-top: 4px dotted;
+    border-color: #F0592b;
+    margin:10px 30%;
+  }
+  /*Homepage:typing animation*/
+  @keyframes typingtext {
+    0% {
+      content: "";
+    }
+  
+    1% {
+      content: "";
+    }
+  
+    2% {
+      content: "";
+    }
+  
+    3% {
+      content: " ";
+    }
+  
+    4% {
+      content: "";
+    }
+  
+    5% {
+      content: "";
+    }
+  
+    6% {
+      content: "";
+    }
+  
+    7% {
+      content: "";
+    }
+  
+    8% {
+      content: "";
+    }
+  
+    9% {
+      content: "";
+    }
+  
+    10% {
+      content: "W";
+    }
+  
+    11% {
+      content: "W";
+    }
+  
+    12% {
+      content: "Wh";
+    }
+  
+    13% {
+      content: "Wha";
+    }
+  
+    14% {
+      content: "What";
+    }
+  
+    15% {
+      content: "What i";
+    }
+  
+    16% {
+      content: "What is";
+    }
+  
+    17% {
+      content: "What is c";
+    }
+  
+    18% {
+      content: "What is ci";
+    }
+  
+    19% {
+      content: "What is civ";
+    }
+  
+    20% {
+      content: "What is civi";
+    }
+  
+    20% {
+      content: "What is civic";
+      /*end of engagement x5*/
+    }
+  
+    21% {
+      content: "What is civic e";
+    }
+  
+    22% {
+      content: "What is civic en";
+    }
+  
+    23% {
+      content: "What is civic eng";
+    }
+  
+    24% {
+      content: "What is civic enga";
+    }
+  
+    25% {
+      content: "What is civic engag";
+    }
+  
+    26% {
+      content: "What is civic engage";
+    }
+  
+    27% {
+      content: "What is civic engagem";
+    }
+  
+    28% {
+      content: "What is civic engagemen";
+    }
+  
+    29% {
+      content: "What is civic engagement";
+    }
+  
+    30% {
+      content: "What is civic engagement?";
+    }
+  
+    31% {
+      content: "What is civic engagement?";
+    }
+  
+    32% {
+      content: "What is civic engagement?";
+    }
+  
+    33% {
+      content: "What is civic engagement?";
+    }
+  
+    34% {
+      content: "What is civic engagement?";
+    }
+  
+    35% {
+      content: "What is civic engagement?";
+    }
+  
+    36% {
+      content: "What is civic engagement";
+    }
+  
+    37% {
+      content: "What is civic engagemen";
+    }
+  
+    38% {
+      content: "What is civic engageme";
+    }
+  
+    39% {
+      content: "What is civic engagem";
+    }
+  
+    40% {
+      content: "What is civic engage"
+        /*end of duty x5*/
+    }
+  
+    41% {
+      content: "What is civic engag";
+      /*end of duty x5*/
+    }
+  
+    42% {
+      content: "What is civic enga";
+      /*end of duty x5*/
+    }
+  
+    43% {
+      content: "What is civic eng";
+      /*end of duty x5*/
+    }
+  
+    44% {
+      content: "What is civic en";
+    }
+  
+    45% {
+      content: "What is civic e";
+    }
+  
+    46% {
+      content: "What is civic";
+    }
+  
+    47% {
+      content: "What is civic d";
+    }
+  
+    /*start of responsiblity*/
+    48% {
+      content: "What is civic du";
+    }
+  
+    495% {
+      content: "What is civic dut";
+    }
+  
+    50% {
+      content: "What is civic duty";
+    }
+  
+    51% {
+      content: "What is civic duty?";
+    }
+  
+    52% {
+      content: "What is civic duty?";
+    }
+  
+    53% {
+      content: "What is civic duty?";
+    }
+  
+    54% {
+      content: "What is civic duty?";
+    }
+  
+    55% {
+      content: "What is civic duty?";
+    }
+  
+    56% {
+      content: "What is civic duty";
+    }
+  
+    57% {
+      content: "What is civic dut";
+    }
+  
+    58% {
+      content: "What is civic du";
+    }
+  
+    59% {
+      content: "What is civic d";
+    }
+  
+    60% {
+      content: "What is civic r ";
+    }
+  
+    61% {
+      content: "What is civic re";
+    }
+  
+    62% {
+      content: "What is civic res";
+    }
+  
+    63% {
+      content: "What is civic resp";
+    }
+  
+    64% {
+      content: "What is civic respo";
+    }
+  
+    65% {
+      content: "What is civic respon";
+    }
+  
+    66% {
+      content: "What is civic respons";
+    }
+  
+    67% {
+      content: "What is civic responsi";
+    }
+  
+    68% {
+      content: "What is civic responsib";
+    }
+  
+    69% {
+      content: "what is civic responsibi";
+    }
+  
+    70% {
+      content: "What is civic responsibil";
+    }
+  
+    71% {
+      content: "What is civic responsibili";
+    }
+  
+    72% {
+      content: "What is civic responsibilit";
+    }
+  
+    73% {
+      content: "What is civic responsibility";
+    }
+  
+    73% {
+      content: "What is civic responsibility?";
+    }
+  
+    74% {
+      content: "What is civic responsibility?";
+    }
+  
+    75% {
+      content: "What is civic responsibility?";
+    }
+  
+    76% {
+      content: "What is civic responsibility";
+    }
+  
+    77% {
+      content: "What is civic responsibilit";
+    }
+  
+    78% {
+      content: "What is civic responsibili";
+    }
+  
+    79% {
+      content: "What is civic responsibil";
+    }
+  
+    80% {
+      content: "What is civic responsibi";
+    }
+  
+    81% {
+      content: "What is civic responsib";
+    }
+  
+    82% {
+      content: "What is civic responsi";
+    }
+  
+    83% {
+      content: "What is civic respons";
+    }
+  
+    84% {
+      content: "What is civic respon";
+    }
+  
+    85% {
+      content: "What is civic respo";
+    }
+  
+    86% {
+      content: "What is civic resp";
+    }
+  
+    87% {
+      content: "What is civic res";
+    }
+  
+    88% {
+      content: "What is civic re";
+    }
+  
+    89% {
+      content: "What is civic r";
+    }
+  
+    90% {
+      content: "What is civic l";
+    }
+  
+    91% {
+      content: "What is civic li";
+    }
+  
+    92% {
+      content: "What is civic lit";
+    }
+  
+    93% {
+      content: "What is civic liter ";
+    }
+  
+    94% {
+      content: "What is civic litera ";
+    }
+  
+    95% {
+      content: "What is civic literac ";
+    }
+  
+    96% {
+      content: "What is civic literacy ";
+    }
+    97% {
+      content: "What is civic literacy? ";
+    }
+    100% {
+      content: "What is civic literacy? ";
+    }
+  
+  
+  
+  }
+  
+  /*involvement*/
+  .socialmediatext * {
+    font-family: porterbold;
+    font-size: 30px;
+    text-align: start;
+    margin: 0 auto;
+    margin-top: 50px;
+    height: auto;
+  }
+  .smr {
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: auto;
+  }
+  .YTplayer{
+    width: 66vw;
+    height: 80vh;
+    margin: 0 auto;
+  }
+  
+  
+  /*about*/
+  .aboutbuttonrow{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+  }
+  .halfr{
+    height: auto;
+  }
+  .half {
+    width:50vw;
+    height: 80vh;
+  }
+  
+  .Qworkslist {
+    font-size: 7vh;
+    font-weight: bold;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .aboutbuttons {
+    color: white;
+    background-color: #F0592b;
+    font-size: 4vh;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-radius: 25px;
+  }
+  
+  /*AR*/
+  .artext *{
+    font-family: porterbold;
+    font-size: 4vh;
+    text-align: center;
+  }
+  .arR{
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    height: auto;
+    }
+  .arl{
+  margin:5vh auto;
+  width:66%;
+  font-size:4vh;
+  }
+                                      /*perch*/
+  /*about*/
+  .weareqworkstext, .howwedoittext *{
+    font-family: porterbold;
+    font-size: 5vh;
+    text-align: start;
+    margin: 80px;
+    margin-top: 3vh;
+  }
+  /*involvement*/
+  .socialmediatext * {
+    font-family: porterbold;
+    font-size: 7vh;
+    text-align: center;
+    margin: 40px;
+  }
+  .joinqworkstext * {
+    font-family: porterbold;
+    font-size: 7vh;
+    text-align: start;
+    margin: 20px;
+  }
+  
+  /*debug*/
+  .debugv{
+    border: 5px solid green;
+  }
+  .QV{
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+
+  
